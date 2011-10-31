@@ -16,13 +16,18 @@ def passToAscii(password):
     return strpass
 
 def getInputText(password):
+    print("=============================================================")
     print("Password: {0}".format(password))
-    print (passToAscii(password))
+    print("_____________________________________________________________")
+    print (">>" + passToAscii(password))
+    print("=============================================================")
     
-
-#Pide ingresar el password que esta 'encriptado'
-print("Ingresa password")
-password = input()
-getInputText(password)
-
-
+def main():    
+	while True:
+		#Pide ingresar el password que esta 'encriptado'
+		print("Ingresa password")		
+		password = input()
+		getInputText(password)	
+	
+	
+main()
